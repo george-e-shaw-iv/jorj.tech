@@ -1,0 +1,36 @@
+name: Build and Publish Blog
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - blog/**
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: jdx/mise-action@v2
+      - working-directory: blog
+        run: hugo
+      - uses: actions/upload-artifact@v4
+        with:
+          name: static-blog
+          path: blog/public
+          retention-days: 1
+          overwrite: true
+  publish:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: jdx/mise-action@v2
+      - uses: actions/download-artifact@v4
+        with:
+          name: static-blog
+          path: blog/public
+      - run: aws s3 sync blog/public s3://jorjtechblog
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          AWS_DEFAULT_REGION: 'us-east-2'
