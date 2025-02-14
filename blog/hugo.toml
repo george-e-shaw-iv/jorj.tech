@@ -1,0 +1,57 @@
+baseURL = 'https://jorj.tech/'
+languageCode = 'en-us'
+title = 'jorj.tech'
+theme = 'hugo-simple'
+copyright = "© 2025 George Edward Shaw IV"
+
+enableRobotsTXT = true
+
+[taxonomies]
+tag = "tags"
+
+[permalinks]
+blog = "/:slugorfilename/"
+tags = "/blog/:slug"
+
+[markup.goldmark.renderer]
+unsafe = true
+[markup.tableOfContents]
+startLevel = 2
+endLevel = 3
+[markup.highlight]
+lineNos = true
+lineNumbersInTable = false
+noClasses = true
+style = "abap"
+
+[params]
+title = "jorj.tech"
+description = "George Shaw's personal blog."
+favicon = "images/favicon.png"
+dateFormat = "2006-01-02"
+hideMadeWithLine = true
+hideRSSLink = false
+
+[params.author]
+name = "George Edward Shaw IV"
+email = "george.e.shaw.iv@outlook.com"
+
+[[menu.main]]
+name = "Home"
+pageRef = "/"
+weight = 10
+[[menu.main]]
+name = "Posts"
+pageRef = "/posts"
+weight = 20
+
+[services.rss]
+limit = 42
+
+[pagination]
+pagerSize = 16
+
+[outputs]
+section = ["html"]
+taxonomy = ["html"]
+term = ["html"]
