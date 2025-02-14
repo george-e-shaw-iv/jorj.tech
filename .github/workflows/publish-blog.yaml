@@ -29,7 +29,7 @@ jobs:
         with:
           name: static-blog
           path: blog/public
-      - run: aws s3 sync blog/public s3://jorjtechblog
+      - run: aws s3 sync blog/public s3://blog.jorj.tech
         env:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
