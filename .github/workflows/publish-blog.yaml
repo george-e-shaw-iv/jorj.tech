@@ -5,6 +5,7 @@ on:
       - main
     paths:
       - blog/**
+      - .github/workflows/**
 jobs:
   build:
     runs-on: ubuntu-latest
