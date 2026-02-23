@@ -1,12 +1,10 @@
 +++
-title = 'New Rules'
-date = 2026-02-22
+title = 'Grief, Growth, and my Future as a Programmer'
+date = 2026-02-23
 draft = false
-description = 'AI is changing software engineering faster than I thought was possible. These are my new rules for attempting to succeed as the paradigm shifts.'
+description = 'As AI transforms software development, this is my honest account of moving from fear and resistance to adaptation and the mindset shifts I’m making to stay relevant and fulfilled.'
 keywords = ['software', 'ai']
 +++
-
-## New Rules
 
 Whether or not I want them to, things are changing. I started writing code when I was around 11 or 12 years old simply
 because it excited me. I thought the process of writing some text and it performing some useful function or coming to life
@@ -51,11 +49,17 @@ the workplace due to what AI, LLMs, agents, fleets, etc. have enabled in develop
 
 ### My New Rules
 
+To preface this section, these are some of the mindset shifts I really want to make as we move into this new paradigm. I think
+they'll play roles in both helping me come to terms with the change as well as set me apart in the future.
+
 #### 1. Embrace Change
 
 I've been hiding behind my own emotions for too long when it comes to all of this. Whether or not I want it to happen, it is
 happening. I can either fully get onboard with it, or the train is going to leave without me. I'm at peace knowing that I would
-rather continue to be in this industry in any capacity than exit it (or get pushed out).
+rather continue to be in this industry in any capacity than exit it (or get pushed out). In addition to that, there is a lot to be
+genuinely excited about as it pertains to AI. If nothing else, I have the ability to pursue some passion projects that have been
+brewing for a few years, but have never came to light because of time and energy constraints that no longer apply due to these new
+tools.
 
 #### 2. Clarity is Key
 
@@ -95,7 +99,14 @@ There is one notable exception to this for me personally. I'm going to continue 
 the old fashioned way without the aide of AI. For the time being things like that are going to be my outlet in absence of not
 writing much code directly at work.
 
-#### 5. Be Kind to Yourself
+#### 5. Think Like a Product Manager
+
+I think the line between product manager and engineer is about to get insanely blurry. I really wouldn't be surprised at all if
+these roles were more common combined than separate in the future. I'm going to do my best to soak up as much information as
+possible from all of the great PMs I know. I think technical product managers are really well positioned to do well in this
+paradigm shift.
+
+#### 6. Be Kind to Yourself
 
 We're all in our own stages of dealing with this massive paradigm shift. I'm currently in the acceptance phase, but that
 doesn't necessarily mean I still can't be sad about the thing that I've loved doing for so long changing massively. It's okay
